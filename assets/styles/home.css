@@ -1,12 +1,58 @@
-body {
-    overflow-x: hidden;
-    overflow-y: auto;  /* allow vertical scrolling */
-    margin: 0;
-    background: #000;
+@keyframes shootingStar {
+    from {
+        top: 0;
+        left: 0;
+        opacity: 0;
+    }
+    to {
+        top: 100%;
+        left: 100%;
+        opacity: 1;
+    }
 }
 
+body {
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin: 0;
+    background: #000;
+    position: relative;
+}
+
+body::before,
+body::after,
+.section::before,
+.section::after,
+.hero-section::before,
+.hero-section::after,
+#mission-statement::before,
+#mission-statement::after,
+#features::before,
+#features::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 5px;
+    width: 5px;
+    background: #9f65a5;
+    box-shadow: 0 0 10px #9f65a5;
+    animation: shootingStar 2s infinite linear;
+}
+
+body::before { animation-delay: 1s; }
+body::after { animation-delay: 3s; }
+.section::before { animation-delay: 2s; }
+.section::after { animation-delay: 4s; }
+.hero-section::before { animation-delay: 1.5s; }
+.hero-section::after { animation-delay: 2.5s; }
+#mission-statement::before { animation-delay: 1.2s; }
+#mission-statement::after { animation-delay: 2.2s; }
+#features::before { animation-delay: 1.7s; }
+#features::after { animation-delay: 2.7s; }
+
 .section {
-    min-height: 100vh;  /* ensure each section is at least as tall as the viewport */
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -22,7 +68,7 @@ body {
 .bg {
     position: absolute;
     width: 100%;
-    height: 200vh; /* Make this larger if you have more content */
+    height: 200vh;
     background-image: url('image1.jpg'), url('image2.jpg'), url('image3.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -40,4 +86,34 @@ body {
     height: 20px;
     border-radius: 50%;
     background: #fff;
+}
+
+.nav-link:hover {
+    color: #9f65a5 !important;
+}
+
+.panel.panel-ditto {
+    background-color: #9f65a5;
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    transition: box-shadow 0.3s;
+}
+
+.panel.panel-ditto:hover {
+    box-shadow: 0 0 10px #fff;
+}
+
+.ditto-color {
+    color: #9f65a5;
+}
+.panel.panel-ditto1{
+    background-color: #fff;
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    transition: box-shadow 0.3s;
+}
+.panel.panel-ditto1:hover {
+    box-shadow: 0 0 10px #9f65a5;
 }
