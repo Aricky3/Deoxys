@@ -10,6 +10,38 @@
         opacity: 1;
     }
 }
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#welcome {
+    animation: appear 2s ease-in-out;
+    animation-delay: 0s;
+}
+
+#ditto {
+    animation: appear 2s ease-in-out;
+    animation-delay: 1s;
+}
+
+
+.text-white {
+    color: #fff;  /* White color */
+}
+
+.ditto-color {
+    color: #9f65a5;  /* Ditto color */
+}
+
+.invisible {
+    opacity: 0;
+}
+
 
 body {
     overflow-x: hidden;
@@ -109,7 +141,7 @@ body::after { animation-delay: 3s; }
 }
 .panel.panel-ditto1{
     background-color: #fff;
-    color: #fff;
+    color: #9f65a5;
     padding: 20px;
     border-radius: 8px;
     transition: box-shadow 0.3s;
@@ -117,3 +149,21 @@ body::after { animation-delay: 3s; }
 .panel.panel-ditto1:hover {
     box-shadow: 0 0 10px #9f65a5;
 }
+.panel.panel-ditto, .panel.panel-ditto1 {
+    /* Add a smooth transition for the transform property */
+    transition: transform 0.3s ease, box-shadow 0.3s;
+}
+
+.panel.panel-ditto:hover, .panel.panel-ditto1:hover {
+    /* On hover, scale the panel up to simulate inflating */
+    transform: scale(1.05);
+}
+
+.panel.panel-ditto, .panel.panel-ditto1 {
+    /* When not hovering, scale the panel back to its original size to simulate deflating */
+    transform: scale(1);
+}
+.appear {
+    animation: appear 2s ease-in-out forwards;
+}
+
