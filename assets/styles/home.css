@@ -49,6 +49,9 @@ body {
     margin: 0;
     background: #000;
     position: relative;
+    cursor: none;
+    
+    
 }
 
 body::before,
@@ -166,4 +169,25 @@ body::after { animation-delay: 3s; }
 .appear {
     animation: appear 2s ease-in-out forwards;
 }
-
+#profile-pic {
+    width: 100px;   /* adjust as necessary */
+    height: 100px;  /* adjust as necessary */
+    border-radius: 50%;  /* this makes the image circular */
+    object-fit: cover;   /* this ensures that the image covers the full area of the circle */
+}
+#footer-section {
+    background-color: #000000; /* Ditto color */
+    color: #fff; /* Text color */
+    padding: 2px 0; /* Top and bottom padding - adjust as needed */
+}
+#glowstick {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    pointer-events: none;
+    z-index: 10000;
+    background-color: #9f65a5;
+    box-shadow: 0 0 10px #9f65a5, 0 0 20px #9f65a5, 0 0 30px #9f65a5, 0 0 40px #9f65a5;
+  }
+  

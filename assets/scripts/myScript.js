@@ -7,3 +7,11 @@ $(document).ready(function() {
         });
     });
 });
+
+$(document).mousemove(function(e) {
+    $('#glowstick').css({
+      left:  e.pageX,
+      top:   e.pageY
+    });
+  });
+  
