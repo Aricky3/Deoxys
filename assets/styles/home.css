@@ -190,4 +190,35 @@ body::after { animation-delay: 3s; }
     background-color: #9f65a5;
     box-shadow: 0 0 10px #9f65a5, 0 0 20px #9f65a5, 0 0 30px #9f65a5, 0 0 40px #9f65a5;
   }
-  
+  .card {
+    background-color: rgba(255, 255, 255, 0.1); /* This will give the card a translucent background */
+    border: 1px solid #ffffff; /* This will give the card a white border */
+    color: #ffffff; /* This will make the text white */
+    margin-bottom: 30px; /* This will add space below each card */
+}
+.btn-link {
+    color: #ffffff; /* This will make the text of the questions white */
+}
+
+.btn-link:hover, .btn-link:focus {
+    color: #ffffff; /* This will keep the text white on hover and when it's focused */
+    text-decoration: none; /* This will remove the underline on hover and when it's focused */
+}
+
+.star::before,
+.star::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 5px;
+    width: 5px;
+    background: #9f65a5;
+    box-shadow: 0 0 10px #9f65a5;
+    animation: shootingStar 8s infinite linear;
+}
+
+.star:nth-child(odd)::before { animation-delay: 2s; }
+.star:nth-child(even)::before { animation-delay: 3s; }
+.star:nth-child(odd)::after { animation-delay: 4s; }
+.star:nth-child(even)::after { animation-delay: 8s; }

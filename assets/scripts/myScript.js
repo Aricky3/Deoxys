@@ -15,3 +15,18 @@ $(document).mousemove(function(e) {
     });
   });
   
+  // define how many stars you want
+var numberOfStars = 10;
+
+// loop through that number
+for (var i = 0; i < numberOfStars; i++) {
+    // create a new div
+    var star = document.createElement('div');
+
+    // give it a class of 'star'
+    star.className = 'star';
+
+    // append it to the body
+    document.body.appendChild(star);
+}
+
