@@ -31,7 +31,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#prototype-video" >Prototype Video</a>
+                        <a class="nav-link" href="#prototype-video">Prototype Video</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#features">Features</a>
@@ -53,12 +53,58 @@
         </h1>
     </section>
 
+    <section id="problem-description" class="section">
+        <div class="container">
+            <h2>Problem Description</h2>
+            <br>
+            <div class="panel panel-ditto">
+                <h3>What is Mirror box therapy?</h3>
+                <p>Mirror box therapy is a treatment technique typically used for patients experiencing phantom limb
+                    pain, motor recovery after stroke, or other rehabilitation needs. The method involves a box with a
+                    mirror placed in the center. The patient places the intact limb within one side of the box and then
+                    moves it; the reflection creates the illusion of a complete, healthy limb, which can “trick” the
+                    brain to help alleviate pain and help with recovery.</p>
+                <br>
+                <br>
+                <h3>Current Problems</h3>
+                <p>Despite its effectiveness, traditional mirror box therapy has limitations. The main issue is the need
+                    for regular in-person sessions with a healthcare provider, which can be challenging for patients
+                    with busy schedules, mobility issues, or geographical limitations. Further, the nature of the mirror
+                    box limits the range of motion and comfort of the therapy at the time of therapy.</p>
+                <br>
+                <br>
+                <h3>Our Product/Solution: Virtual Reality Mirror Therapy</h3>
+                <p>Our solution tackles these problems head-on by introducing Virtual Reality (VR) into mirror box
+                    therapy. Our product is a virtual reality mirror therapy application that can be used at home or any
+                    convenient location, using a VR headset.</p>
+                <br>
+                <br>
+                <p>Here's how our product helps to address the current problems:</p>
+                <ul>
+                    <li><strong>Accessibility:</strong> Our VR solution allows patients to undergo therapy sessions no
+                        matter where they are. It reduces the need for regular, in-person visits to healthcare
+                        providers, making it especially useful for those with irregular work schedules or limited
+                        mobility.</li>
+                    <li><strong>Engagement:</strong> Traditional mirror therapy relies heavily on the patient's ability
+                        to "imagine" the movement of the absent or affected limb. Our VR solution can visually replicate
+                        the limb in various environments and contexts, increasing immersiveness, patient engagement and
+                        potentially boosting how effective the therapy can be.</li>
+                    <li><strong>Customizability:</strong> Our product can be tailored to each patient's specific needs,
+                        allowing for personalized therapy sessions. The VR program can be adjusted to the user’s or the
+                        clinician’s preferences to boost how effective the therapy can be.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
 
     <section id="prototype-video" class="section">
         <div class="container">
             <h2>Prototype Video</h2>
-            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/l2KLrny5CQA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/l2KLrny5CQA"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
         </div>
     </section>
 
@@ -66,32 +112,45 @@
         <div class="container">
             <h2>Feedback Session Results</h2>
             <p>
-                The expert we discussed with was Brennan Marshall, a 3rd year medical student at UCSD Health and works at the simulation center. He has a background in the intersection between computer science and medicine, which gives him an avid understanding in this field. He has developed a mirror therapy app on iOS but this inherently limits the user's experience since they are bound to the 2D device, making it less user-friendly.
+                The expert we discussed with was Brennan Marshall, a 3rd year medical student at UCSD Health and works
+                at the simulation center. He has a background in the intersection between computer science and medicine,
+                which gives him an avid understanding in this field. He has developed a mirror therapy app on iOS but
+                this inherently limits the user's experience since they are bound to the 2D device, making it less
+                user-friendly.
 
-                We followed a semi-structured interview process for our feedback session. Since our prototype was a 3D application, we recorded a video showing what it would look like. We shared this video with our expert at the very beginning of our feedback session, and asked questions about it afterwards. The expert brought up many points that were interesting and relevant to our prototype, so we ended up diverging rather far from our initial interview questions, but circled back towards them at the end of the feedback session.
+                We followed a semi-structured interview process for our feedback session. Since our prototype was a 3D
+                application, we recorded a video showing what it would look like. We shared this video with our expert
+                at the very beginning of our feedback session, and asked questions about it afterwards. The expert
+                brought up many points that were interesting and relevant to our prototype, so we ended up diverging
+                rather far from our initial interview questions, but circled back towards them at the end of the
+                feedback session.
 
                 The main feedback points we received are listed below:
-                <ul>
-                    <li>The mirrored limb has to be very realistic.</li>
-                    <li>He suggested a scanning method, where real time image processing is used to mirror limbs</li>
-                    <li>He suggested that hand tracking can be used to inform the image processing</li>
-                    <li>Something as simple as the lack of a tattoo (or an extra tattoo) can render the therapy less effective, so realism should be a priority.</li>
-                    <li>A normal VR avatar would not be sufficient.</li>
-                    <li>The convenience of the setup will be the main driver for user use, and a complex PC-connected sort of setup might end up an interesting project but with nobody using it</li>
-                    <li>AR is not feasible for this project, because users will be able to see their lack of a limb clearly, breaking the therapy. </li>
-                    <li>We need an easier and more intuitive interface to pick out missing limb </li>
-                    <li>Another large benefit of this would be data collection for researchers and clinicians</li>
-                    <li>We could use other devices to remind the user to do the therapy</li>
-                </ul>
-                From the feedback, the main takeaways that we applied were: 
-                <ul>
-                    <li>A diagram for users to pick which limb is missing </li>
-                    <li>Scanning the users limb that they wish to do mirror therapy in order to effectively and accurately reproduce limb</li>
-                    <li>Guided sessions within the app for ease of use</li>
-                    <li>Notifications on a smartphone or connected smart watch to remind the user to check in</li>
-                    <li>Interface for researchers and clinicians to access the session data of the users</li>
-                    <li>Making sure the environment is as realistic as possible</li>
-                </ul>
+            <ul>
+                <li>The mirrored limb has to be very realistic.</li>
+                <li>He suggested a scanning method, where real time image processing is used to mirror limbs</li>
+                <li>He suggested that hand tracking can be used to inform the image processing</li>
+                <li>Something as simple as the lack of a tattoo (or an extra tattoo) can render the therapy less
+                    effective, so realism should be a priority.</li>
+                <li>A normal VR avatar would not be sufficient.</li>
+                <li>The convenience of the setup will be the main driver for user use, and a complex PC-connected sort
+                    of setup might end up an interesting project but with nobody using it</li>
+                <li>AR is not feasible for this project, because users will be able to see their lack of a limb clearly,
+                    breaking the therapy. </li>
+                <li>We need an easier and more intuitive interface to pick out missing limb </li>
+                <li>Another large benefit of this would be data collection for researchers and clinicians</li>
+                <li>We could use other devices to remind the user to do the therapy</li>
+            </ul>
+            From the feedback, the main takeaways that we applied were:
+            <ul>
+                <li>A diagram for users to pick which limb is missing </li>
+                <li>Scanning the users limb that they wish to do mirror therapy in order to effectively and accurately
+                    reproduce limb</li>
+                <li>Guided sessions within the app for ease of use</li>
+                <li>Notifications on a smartphone or connected smart watch to remind the user to check in</li>
+                <li>Interface for researchers and clinicians to access the session data of the users</li>
+                <li>Making sure the environment is as realistic as possible</li>
+            </ul>
             </p>
         </div>
     </section>
@@ -103,20 +162,31 @@
                 <div class="col-md-4">
                     <div class="panel panel-ditto1">
                         <h3>Interactive Virtual Reality Mirror Therapy</h3>
-                        <p>Unveil an immersive rehabilitation experience with our innovative VR software, designed to mirror real-time therapy sessions. With the power of VR, users can control a digital version of their affected limb, stimulating neural pathways to enhance recovery. It's a groundbreaking feature for patients seeking advanced rehabilitation solutions.
+                        <p>Unveil an immersive rehabilitation experience with our innovative VR software, designed to
+                            mirror real-time therapy sessions. With the power of VR, users can control a digital version
+                            of their affected limb, stimulating neural pathways to enhance recovery. It's a
+                            groundbreaking feature for patients seeking advanced rehabilitation solutions.
                         </p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="panel panel-ditto1">
                         <h3>Personalized Therapeutic Exercises</h3>
-                        <p>Our VR software is not one-size-fits-all. It allows users to tailor their therapeutic exercises, considering their comfort, recovery stage, and specific needs. The adaptive VR environment modifies the virtual tasks to match individual requirements, providing a personalized therapy regimen for each user, regardless of their condition or recovery stage.</p>
+                        <p>Our VR software is not one-size-fits-all. It allows users to tailor their therapeutic
+                            exercises, considering their comfort, recovery stage, and specific needs. The adaptive VR
+                            environment modifies the virtual tasks to match individual requirements, providing a
+                            personalized therapy regimen for each user, regardless of their condition or recovery stage.
+                        </p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="panel panel-ditto1">
                         <h3>Real-time Progress Tracking and Analytics</h3>
-                        <p>Equipped with real-time progress tracking, our software provides users with insightful feedback on their recovery journey. Using smart algorithms, it records and analyses each therapy session, delivering comprehensive data on user improvement. This aids both therapists and users in understanding the recovery trajectory, enabling effective, data-driven modifications for future sessions.</p>
+                        <p>Equipped with real-time progress tracking, our software provides users with insightful
+                            feedback on their recovery journey. Using smart algorithms, it records and analyses each
+                            therapy session, delivering comprehensive data on user improvement. This aids both
+                            therapists and users in understanding the recovery trajectory, enabling effective,
+                            data-driven modifications for future sessions.</p>
                     </div>
                 </div>
             </div>
@@ -126,17 +196,19 @@
     <section id="faq" class="section">
         <div class="container">
             <h2>Frequently Asked Questions</h2>
-    
+
             <div id="accordion">
                 <div class="card">
                     <div class="card-header" id="headingOne">
                         <h5 class="mb-0">
-                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                Can this VR mirror therapy software be used at home, or is it only for clinical settings?
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"
+                                aria-expanded="true" aria-controls="collapseOne">
+                                Can this VR mirror therapy software be used at home, or is it only for clinical
+                                settings?
                             </button>
                         </h5>
                     </div>
-    
+
                     <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
                         <div class="card-body">
                             Answer to Question 1
@@ -146,36 +218,44 @@
                 <div class="card">
                     <div class="card-header" id="headingTwo">
                         <h5 class="mb-0">
-                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                                aria-expanded="false" aria-controls="collapseTwo">
                                 How does the VR Mirror Therapy software work?
                             </button>
                         </h5>
                     </div>
                     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
                         <div class="card-body">
-                            Absolutely! Our software is designed to provide a personalized therapy experience. The VR environment and tasks can be modified to match your comfort level, recovery stage, and specific therapeutic requirements. The aim is to create an individualized regimen that assists your rehabilitation effectively
+                            Absolutely! Our software is designed to provide a personalized therapy experience. The VR
+                            environment and tasks can be modified to match your comfort level, recovery stage, and
+                            specific therapeutic requirements. The aim is to create an individualized regimen that
+                            assists your rehabilitation effectively
                         </div>
                     </div>
                 </div>
                 <div class="card">
                     <div class="card-header" id="headingThree">
                         <h5 class="mb-0">
-                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
+                                aria-expanded="false" aria-controls="collapseThree">
                                 How can I track my progress using this software?
                             </button>
                         </h5>
                     </div>
                     <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
                         <div class="card-body">
-                            The VR Mirror Therapy software comes with a built-in progress tracking feature. It records and analyses your performance during each session using advanced algorithms, providing insightful data about your improvement over time. This feature helps you understand your recovery trajectory better, allowing for necessary adjustments to your therapy plan
+                            The VR Mirror Therapy software comes with a built-in progress tracking feature. It records
+                            and analyses your performance during each session using advanced algorithms, providing
+                            insightful data about your improvement over time. This feature helps you understand your
+                            recovery trajectory better, allowing for necessary adjustments to your therapy plan
                         </div>
                     </div>
                 </div>
             </div>
-    
+
         </div>
     </section>
-    
+
 
     <section id="team" class="section">
         <div class="container">
@@ -185,21 +265,30 @@
                     <div class="panel panel-ditto">
                         <h3>Ricardo Aguilar</h3>
                         <img id="profile-pic" src="assets/media/Rickyface.jpg" alt="Your Name">
-                        <p>I'm a passionate 4th year Mathematics-CS student at UCSD, with a strong drive to pursue a career in the health tech sector. With a deep interest in leveraging technology for positive impact, I am committed to making a difference in people's lives. Through my studies and experiences, I aim to contribute to the advancement of healthcare and enhance patient outcomes. Join me on this journey as we shape the future of healthcare through innovation and a shared vision for improved well-being.Contact: r3aguila@ucsd.edu</p>
+                        <p>I'm a passionate 4th year Mathematics-CS student at UCSD, with a strong drive to pursue a
+                            career in the health tech sector. With a deep interest in leveraging technology for positive
+                            impact, I am committed to making a difference in people's lives. Through my studies and
+                            experiences, I aim to contribute to the advancement of healthcare and enhance patient
+                            outcomes. Join me on this journey as we shape the future of healthcare through innovation
+                            and a shared vision for improved well-being.Contact: r3aguila@ucsd.edu</p>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="panel panel-ditto">
                         <h3>Varun Singh</h3>
                         <img id="profile-pic" src="assets/media/Varunface.jpg" alt="Your Name">
-                        <p>I am a 4th year in the CSE department at UCSD, driven by a strong desire to pursue a career in the exciting world of Virtual Reality (VR). With a profound interest in harnessing technology for positive impact, I am dedicated to making a difference in people's lives. Through my studies and hands-on experiences, my goal is to contribute to the advancement of VR and enhance user experiences.Contact: v7singh@ucsd.edu </p>
+                        <p>I am a 4th year in the CSE department at UCSD, driven by a strong desire to pursue a career
+                            in the exciting world of Virtual Reality (VR). With a profound interest in harnessing
+                            technology for positive impact, I am dedicated to making a difference in people's lives.
+                            Through my studies and hands-on experiences, my goal is to contribute to the advancement of
+                            VR and enhance user experiences.Contact: v7singh@ucsd.edu </p>
                     </div>
                 </div>
             </div>
-        </div>   
+        </div>
     </section>
 
-    <section class="section ditto-color" id = "footer-section">
+    <section class="section ditto-color" id="footer-section">
         <div class="container text-center">
             <footer>
                 <div class="row">
@@ -226,7 +315,7 @@
         <div class="shooting-star"></div>
         <!-- add as many divs as you need -->
     </div>
-    
+
 
 
     <script src="assets/scripts/helix.js"></script>

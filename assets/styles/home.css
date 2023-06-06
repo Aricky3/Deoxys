@@ -222,3 +222,12 @@ body::after { animation-delay: 3s; }
 .star:nth-child(even)::before { animation-delay: 3s; }
 .star:nth-child(odd)::after { animation-delay: 4s; }
 .star:nth-child(even)::after { animation-delay: 8s; }
+
+.problem-section,
+.subheading {
+    background-color: #f9f9f9; /* change this to your preferred color */
+    border-radius: 5px; /* rounded corners */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3); /* shadow effect */
+    padding: 20px; /* space around content */
+    margin-bottom: 20px; /* space below each card */
+}
