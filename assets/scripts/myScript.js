@@ -30,3 +30,21 @@ for (var i = 0; i < numberOfStars; i++) {
     document.body.appendChild(star);
 }
 
+document.addEventListener('DOMContentLoaded', function() {
+    var sections = document.querySelectorAll('.section');
+
+    function checkScroll() {
+        var windowHeight = window.innerHeight;
+
+        sections.forEach(function(section) {
+            var sectionTop = section.getBoundingClientRect().top;
+
+            if (sectionTop < windowHeight * 0.8) {
+                section.classList.add('animate');
+            }
+        });
+    }
+
+    window.addEventListener('scroll', checkScroll);
+    checkScroll();
+});

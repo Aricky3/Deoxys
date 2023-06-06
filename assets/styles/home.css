@@ -268,4 +268,16 @@ body::after { animation-delay: 3s; }
       padding-top: 75%; /* 4:3 aspect ratio for smaller screens */
     }
   }
+
+  .section {
+    opacity: 0;
+    transform: translateX(100%);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.section.animate {
+    opacity: 1;
+    transform: translateX(0);
+}
+
   
