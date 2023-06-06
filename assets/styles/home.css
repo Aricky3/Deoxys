@@ -187,8 +187,8 @@ body::after { animation-delay: 3s; }
     position: absolute;
     pointer-events: none;
     z-index: 10000;
-    background-color: #9f65a5;
-    box-shadow: 0 0 10px #9f65a5, 0 0 20px #9f65a5, 0 0 30px #9f65a5, 0 0 40px #9f65a5;
+    background-color: #92b2ff;
+    box-shadow: 0 0 10px #92b2ff, 0 0 20px #92b2ff, 0 0 30px #92b2ff, 0 0 40px #92b2ff;
   }
   .card {
     background-color: rgba(255, 255, 255, 0.1); /* This will give the card a translucent background */
